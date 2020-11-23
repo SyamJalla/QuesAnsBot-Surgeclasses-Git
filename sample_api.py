@@ -19,7 +19,7 @@ def get_definations():
 
     msg_dict = [{"Text": category}]
 
-    return jsonify({"msg_dict": msg_dict})
+    return jsonify({"msg_dict git change": msg_dict})
 
 
 if __name__ == '__main__':
