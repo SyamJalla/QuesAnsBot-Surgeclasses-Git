@@ -21,6 +21,17 @@ def get_definations():
 
     return jsonify({"msg_dict git change": msg_dict})
 
+@app.route('/get_definations1', methods=['POST', 'GET'])
+def get_definations1():
+    data = request.args
+    data.to_dict(flat=False)
+    category = data['category'].lower()
+
+    msg_dict = [{"Text": category}]
+
+    return jsonify({"msg_dict git change": msg_dict})
+
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
